@@ -1,0 +1,24 @@
+{
+  "name": "siphon",
+  "version": "0.0.1",
+  "authors": [
+    "Trey Cordova <treycordova@hotmail.com>"
+  ],
+  "description": "Siphon, a video game.",
+  "keywords": [
+    "siphon",
+    "video",
+    "game",
+    "platfomer",
+    "puzzler"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
