@@ -218,6 +218,7 @@ textarea {
 .video {
     position: relative;
     overflow: hidden;
+    padding: 2em 0;
 
     -webkit-animation: fromTo ease-in 4s;
     -moz-animation: fromTo ease-in 4s;
@@ -254,7 +255,7 @@ textarea {
 
 .video .title img {
     opacity: 0;
-    width: 50%;
+    width: 35%;
 
     -webkit-animation: fadeIn ease-in 2000ms;
     -moz-animation: fadeIn ease-in 2000ms;
@@ -284,7 +285,6 @@ textarea {
 .social {
     padding: 0.5em;
     background-color: #E0C68F;
-    border-bottom: solid 1px #CCC7B1;
 }
 
 .social .col-md-12 {
@@ -385,11 +385,23 @@ footer ul li {
     font-weight: bolder;
 }
 
-footer .greenlight {
+section.greenlight {
+    color: #FFF;
+    background-color: #384132;
+    border-top: solid 1px #0F1B00;
+    border-bottom: solid 1px #F0F0F0;
+}
+
+section.greenlight p {
+    margin-top: 36px;
+}
+
+img.greenlight {
+    width: 100%;
     max-width: 200px;
-    opacity: 0.7;
-    margin-bottom: 20px;
-    box-shadow: 0 0 30px #000;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
 
 /* ==========================================================================
@@ -501,6 +513,18 @@ footer .greenlight {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (max-width: 1200px) {
+    section.greenlight p {
+        margin-top: 28px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    section.greenlight p {
+        margin-top: 14px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
