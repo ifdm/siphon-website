@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Siphon</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <link href="//fonts.googleapis.com/css?family=Signika+Negative:400,700" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="js/vendor/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
+<?php get_header(); ?>
         <div id="fb-root"></div>
         <script>
         // Facebook
@@ -35,11 +17,11 @@
         <![endif]-->
         <header class="video">
             <div class="title">
-                <img src="img/siphon.png" alt="Siphon">
+                <img src="<?php bloginfo('template_url'); ?>/img/siphon.png" alt="Siphon">
                 <h1 class="tagline">Harness Nature. Save The World.</h1>
                 <h4>A 2D Platformer that tests your puzzle-solving mettle.</h4>
             </div>
-            <img class="background" src="img/waterfall.png" alt="">
+            <img class="background" src="<?php bloginfo('template_url'); ?>/img/waterfall.png" alt="">
         </header>
         <section class="social">
             <div class="container">
@@ -56,7 +38,7 @@
                 <div class="row">
                     <div class="col-xs-3">
                         <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=211249666">
-                            <img src="img/steam-greenlight.jpg" alt="Steam Greenlight" class="greenlight center-block">
+                            <img src="<?php bloginfo('template_url'); ?>/img/steam-greenlight.jpg" alt="Steam Greenlight" class="greenlight center-block">
                         </a>
                     </div>
                     <div class="col-xs-9">
@@ -68,18 +50,31 @@
         <section class="content">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-8">
                         <article>
                             <h1 class="tagline">The Story.</h1>
                             <p>Siphon revolves around a distant planet not too much unlike Earth. Rich and diverse locations await discovery. Environments range from dense jungles to the rocky peaks and crevasses of grandiose mountain ranges. Deep, dark cave systems perforate the world as well as murky, foul swamps and desolate wastelands. However, unlike Earth, this place’s beauty is being threatened by a parasitic race that intends to upset the very balance of the entire planet. All hope rests in the capable hands of Trella, a plant creature from a remote and peaceful plant village hidden in the thickest part of the jungle.</p>
                             <p>Trella fights through a variety of environments to hunt down and vanquish the source of the impending doom on her planet. She will use the very plants themselves to defend against this oppressive enemy. She will journey to the depths of the foul creatures’ lair. She will extinguish all who oppose. And after all the dust has settled and peace has been restored, maybe, just maybe, she will return to her peaceful village hidden in the trees . . . or maybe her journey has just begun.</p>
                         </article>
                     </div>
+                    <div class="col-md-4 posts">
+                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                        <div class="list-group">
+                            <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>" class="list-group-item">
+                                <h4 class="list-group-item-heading"><?php the_title(); ?></h4>
+                                <p class="list-group-item-text"><?php the_excerpt(); ?></p>
+                            </a>
+                            <div class="gutter">
+                                <small><?php the_time('F jS, Y') ?> by <?php the_author_posts_link() ?></small>
+                            </div>
+                        </div>
+                        <?php endwhile; endif; ?>
+                    </div>
                 </div>
             </div>
             <div class="wall">
-                <img class="rock-1" src="img/wall.png" alt="">
-                <img class="rock-2" src="img/wall.png" alt="">
+                <img class="rock-1" src="<?php bloginfo('template_url'); ?>/img/wall.png" alt="">
+                <img class="rock-2" src="<?php bloginfo('template_url'); ?>/img/wall.png" alt="">
                 <iframe width="853" height="480" src="//www.youtube.com/embed/j7fkXUyCeGg" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="container">
@@ -94,48 +89,4 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <section class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <article>
-                            <ul>
-                                <li>Nathan Spencer</li>
-                                <li>Jeanette Arroyo</li>
-                                <li>Michelle De La Garza</li>
-                                <li>Stephanie Galliart</li>
-                                <li>Maryse Ayub</li>
-                                <li>Ezra Stallings</li>
-                                <li>Kyle Leikser-Krohn</li>
-                                <li>Nolan Blankenship</li>
-                                <li>Bj&#248;rn Swenson</li>
-                                <li>Graciela Ruiz</li>
-                                <li>Evan Slagle</li>
-                                <li>Sophia Baldonado</li>
-                                <li>Trey Cordova</li>
-                            </ul>
-                        </article>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-right">
-                        <p class="text-muted">All Rights Reserved. Copyright &copy; 2013, Interdisciplinary Film and Digital Media, University of New Mexico.</p>
-                    </div>
-                </div>
-            </section>
-        </footer>
-
-        <script type="text/javascript" src="js/vendor/jquery/jquery.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-37381091-2']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-        </script>
-    </body>
-</html>
+<?php get_footer(); ?>
