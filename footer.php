@@ -13,7 +13,7 @@
                                 <li>Ezra Stallings</li>
                                 <li>Kyle Leikser-Krohn</li>
                                 <li>Nolan Blankenship</li>
-                                <li>Bj&#248;rn Swenson</li>
+                                <li>Bj<a href="http://www.autohotkey.com/board/topic/84831-lua-sucks/">&#248;</a>rn Swenson</li>
                                 <li>Graciela Ruiz</li>
                                 <li>Evan Slagle</li>
                                 <li>Sophia Baldonado</li>
