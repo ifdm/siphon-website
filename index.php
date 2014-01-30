@@ -44,23 +44,24 @@
         <section class="content">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-7">
                         <article>
                             <h1 class="tagline">The Story.</h1>
                             <p>Siphon revolves around a distant planet not too much unlike Earth. Rich and diverse locations await discovery. Environments range from dense jungles to the rocky peaks and crevasses of grandiose mountain ranges. Deep, dark cave systems perforate the world as well as murky, foul swamps and desolate wastelands. However, unlike Earth, this place’s beauty is being threatened by a parasitic race that intends to upset the very balance of the entire planet. All hope rests in the capable hands of Trella, a plant creature from a remote and peaceful plant village hidden in the thickest part of the jungle.</p>
                             <p>Trella fights through a variety of environments to hunt down and vanquish the source of the impending doom on her planet. She will use the very plants themselves to defend against this oppressive enemy. She will journey to the depths of the foul creatures’ lair. She will extinguish all who oppose. And after all the dust has settled and peace has been restored, maybe, just maybe, she will return to her peaceful village hidden in the trees . . . or maybe her journey has just begun.</p>
                         </article>
                     </div>
-                    <div class="col-md-4 posts">
+                    <div class="col-md-5 posts">
+                        <h1 class="tagline">Our Blog.</h1>
                         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         <div class="list-group">
+                            <div class="gutter">
+                                <small><?php the_time('F jS, Y') ?></small>
+                            </div>
                             <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>" class="list-group-item">
                                 <h4 class="list-group-item-heading"><?php the_title(); ?></h4>
-                                <p class="list-group-item-text"><?php the_excerpt(); ?></p>
+                                <h5>By <?php the_author(); ?></h5>
                             </a>
-                            <div class="gutter">
-                                <small><?php the_time('F jS, Y') ?> by <?php the_author_posts_link() ?></small>
-                            </div>
                         </div>
                         <?php endwhile; endif; ?>
                     </div>

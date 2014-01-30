@@ -6,6 +6,7 @@
 		<div class="col-xs-12">
 			<?php if( have_posts() ): the_post(); ?>
 			<article class="post">
+				<a class="btn btn-default" href="blog">Back to Posts</a>
 				<header>
 					<h1><?php the_title(); ?></h1>
 					<small><?php the_date(); ?>, <?php the_author(); ?></small>

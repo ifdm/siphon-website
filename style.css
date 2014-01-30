@@ -444,7 +444,7 @@ img.greenlight {
 }
 
 .posts .list-group {
-	box-shadow: 0 0 10px #DABD81;
+    box-shadow: 0 0 10px #C2A873;
 }
 
 .posts .list-group-item {
@@ -466,13 +466,14 @@ a.list-group-item .list-group-item-heading {
 }
 
 .posts .gutter {
-	background-color: #353535;
-	color: #E6E6E6;
-	padding: 5px;
-	border: solid 1px #AAA;
-	border-top: 0;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+    color: #6C6767;
+    padding: 5px;
+    border: solid 1px #D3BE86;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 /** The post **/
@@ -494,6 +495,7 @@ a.list-group-item .list-group-item-heading {
 
 .blog-page {
     margin: 0 auto;
+    padding: 1em 28px;
     max-width: 750px;
     background: #FFF;
 }
