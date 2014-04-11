@@ -52,6 +52,13 @@
         <section class="content">
             <div class="container">
                 <div class="row">
+                    <div class="col-md-12 announcement">
+                        <h2>We're Having Our Showcase Event!</h2>
+                        <p>Where: Robert Hartung Hall, University of New Mexico.</p>
+                        <p>When: May 2nd, 2014 at 4PM.</p>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-md-7">
                         <article>
                             <h1 class="tagline">The Story.</h1>
