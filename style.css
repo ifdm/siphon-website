@@ -253,17 +253,7 @@ body {
     overflow: hidden;
     padding: 2em 0;
 
-    -webkit-animation: fromTo ease-in 4s;
-    -moz-animation: fromTo ease-in 4s;
-    -ms-animation: fromTo ease-in 4s;
-    -o-animation: fromTo ease-in 4s;
-    animation: fromTo ease-in 4s;
-
-    -webkit-animation-fill-mode:forwards;
-    -moz-animation-fill-mode:forwards;
-    -ms-animation-fill-mode:forwards;
-    -o-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
+    background-color: #67BDCE;
 
     min-height: 256px
 }
@@ -274,10 +264,40 @@ body {
 
 .video .background {
     width: 100%;
-    opacity: 0.4;
+    opacity: 0.6;
     position: absolute;
-    top: 0;
+    top: 131px;
     z-index: 0;
+}
+
+.video .sun {
+    color: #FFF;
+    background-color: #E2D42C;
+    border-top: solid 1px #FF932F;
+    border-bottom: solid 1px #EBE4E2;
+    box-shadow: 0 0 40px #FFDD71;
+    width: 200px;
+    height: 200px;
+    border-radius: 300px;
+    margin: 0 auto;
+    position: absolute;
+    top: -30px;
+    right: 110px;
+    -webkit-transform: rotateZ(7deg);
+    z-index: 1;
+}
+
+.video .sun h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-left: 10px;
+    margin-top: 61px;
+    letter-spacing: 10px;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.video .sun h1 span {
+  font-size: 0.5em;
 }
 
 .video .title {
@@ -287,20 +307,8 @@ body {
 }
 
 .video .title img {
-    opacity: 0;
+    opacity: 1;
     width: 35%;
-
-    -webkit-animation: fadeIn ease-in 2000ms;
-    -moz-animation: fadeIn ease-in 2000ms;
-    -ms-animation: fadeIn ease-in 2000ms;
-    -o-animation: fadeIn ease-in 2000ms;
-    animation: fadeIn ease-in 2000ms;
-
-    -webkit-animation-fill-mode:forwards;
-    -moz-animation-fill-mode:forwards;
-    -ms-animation-fill-mode:forwards;
-    -o-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
 }
 
 .video .title h1, .video .title h4 {
@@ -574,7 +582,7 @@ a.list-group-item .list-group-item-heading {
 .aligncenter { display:block; margin:0 auto }
 .alignleft { float:left }
 .alignright { float:right }
-.wp-caption { 
+.wp-caption {
     border: 1px solid #B8B8B8;
     background: #E7E7E7;
 }

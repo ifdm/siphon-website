@@ -15,7 +15,15 @@
                 <h1 class="tagline">Harness Nature. Save The World.</h1>
                 <h4>A 2D Platformer that tests your puzzle-solving mettle.</h4>
             </div>
-            <img class="background" src="<?php bloginfo('template_url'); ?>/img/waterfall.png" alt="">
+            <section class="sun">
+              <h1>
+                <span>Available</span><br>5.2.14
+              </h1>
+            </section>
+            <video class="background" autoplay loop="true">
+                <source src="<?php bloginfo('template_url'); ?>/video/waterfall.webm" type="video/webm">
+                <source src="<?php bloginfo('template_url'); ?>/video/waterfall.mp4" type="video/mp4">
+            </video>
         </header>
         <section class="social">
             <div class="container">
