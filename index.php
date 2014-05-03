@@ -17,7 +17,7 @@
             </div>
             <section class="sun">
               <h1>
-                <span>Available</span><br>5.2.14
+                <span>Available</span><br>5.3.14
               </h1>
             </section>
             <video class="background" autoplay loop="true">
@@ -53,11 +53,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 announcement">
-                        <h2>We're Having Our Showcase Event!</h2>
-                        <p>Where: Robert Hartung Hall, University of New Mexico.</p>
-                        <p>When: May 2nd, 2014 at 4PM.</p>
+                        <img src="<?php echo bloginfo('template_url'); ?>/img/siphon-release-flyer.jpg" alt="Siphon Release! May 3rd">
                     </div>
                 </div>
+            </div>
+            <div class="wall">
+                <img class="rock-1" src="<?php bloginfo('template_url'); ?>/img/wall.png" alt="">
+                <img class="rock-2" src="<?php bloginfo('template_url'); ?>/img/wall.png" alt="">
+                <iframe width="853" height="480" src="//www.youtube.com/embed/j7fkXUyCeGg" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="container">
                 <div class="row">
                     <div class="col-md-7">
                         <article>
@@ -79,22 +84,6 @@
                             </a>
                         </div>
                         <?php endwhile; endif; ?>
-                    </div>
-                </div>
-            </div>
-            <div class="wall">
-                <img class="rock-1" src="<?php bloginfo('template_url'); ?>/img/wall.png" alt="">
-                <img class="rock-2" src="<?php bloginfo('template_url'); ?>/img/wall.png" alt="">
-                <iframe width="853" height="480" src="//www.youtube.com/embed/j7fkXUyCeGg" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <article>
-                            <h1 class="tagline">Getting Involved.</h1>
-                            <p>Siphon is a Capstone project realized by students in the Interdisciplinary Film and Digital Media program at the University of New Mexico. Given our situations, we are always looking for helping hands.</p>
-                            <p>If you are interested in developing an amazing 2D platformer, contact <a href="mailto:ifdmcapstone2013@gmail.com">Sophia Baldonado</a>, Siphon's Producer.</p>
-                        </article>
                     </div>
                 </div>
             </div>

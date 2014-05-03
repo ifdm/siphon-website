@@ -266,7 +266,7 @@ body {
     width: 100%;
     opacity: 0.6;
     position: absolute;
-    top: 131px;
+    top: 0;
     z-index: 0;
 }
 
@@ -459,17 +459,24 @@ img.greenlight {
     text-align: center;
     background-color: #FFF4DD;
     padding: 10px;
+    padding-top: 20px;
     text-shadow: 0 0 1px #FFF2BE;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     border: solid 1px #FFF;
     border-top: none;
     margin-top: -1px;
+    margin-bottom: 20px;
     color: #555;
 }
 
 .announcement p {
   font-style: italic;
+}
+
+.announcement img {
+    width: 75%;
+    box-shadow: 0 0 10px #AC9448;
 }
 
 /** Posts on Home Page **/

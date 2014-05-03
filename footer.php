@@ -6,12 +6,12 @@
                         <article>
                             <ul>
                                 <li>Nathan Spencer</li>
-                                <li>Jeanette Arroyo</li>
+                                <li>Jeannette Arroyo</li>
                                 <li>Michelle De La Garza</li>
                                 <li>Stephanie Galliart</li>
                                 <li>Maryse Ayub</li>
                                 <li>Ezra Stallings</li>
-                                <li>Kyle Leikser-Krohn</li>
+                                <li>Kyle Leisker-Krohn</li>
                                 <li>Nolan Blankenship</li>
                                 <li>Bj<a href="http://www.autohotkey.com/board/topic/84831-lua-sucks/">&#248;</a>rn Swenson</li>
                                 <li>Graciela Ruiz</li>
