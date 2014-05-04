@@ -252,52 +252,71 @@ body {
     position: relative;
     overflow: hidden;
     padding: 2em 0;
-
     background-color: #67BDCE;
-
+    text-align: center;
     min-height: 256px
 }
 
 .video video {
     width: 100%;
+    display: block;
 }
 
 .video .background {
     width: 100%;
     opacity: 0.6;
     position: absolute;
-    top: 0;
+    bottom: 0;
     z-index: 0;
 }
 
 .video .sun {
     color: #FFF;
+    display: inline-block;
     background-color: #E2D42C;
-    border-top: solid 1px #FF932F;
-    border-bottom: solid 1px #EBE4E2;
-    box-shadow: 0 0 40px #FFDD71;
-    width: 200px;
-    height: 200px;
-    border-radius: 300px;
-    margin: 0 auto;
-    position: absolute;
-    top: -30px;
-    right: 110px;
-    -webkit-transform: rotateZ(7deg);
+    border-top: solid 4px #AAA05A;
+    box-shadow: 0 0 40px #52717A;
+    border-radius: 10px;
+    margin: 20px auto;
+    position: relative;
+    padding: 1.5em;
+    cursor: pointer;
     z-index: 1;
+    -webkit-transition: all ease-in-out .35s;
+    transition: all ease-in-out .35s;
+}
+
+.video .sun:hover {
+    text-decoration: none;
+    box-shadow: 0 0 20px #52717A;
 }
 
 .video .sun h1 {
     text-align: center;
-    font-size: 2.5em;
-    margin-left: 10px;
-    margin-top: 61px;
-    letter-spacing: 10px;
+    font-size: 1.2em;
+    margin: 0;
+    margin-top: 2px;
+    margin-bottom: -4px;
+    letter-spacing: 7px;
     font-family: 'Signika Negative', sans-serif;
+    text-shadow: 1px -1px 1px #DACC30;
+    vertical-align: top;
 }
 
 .video .sun h1 span {
-  font-size: 0.5em;
+    font-size: 1.5em;
+    margin-top: -4px;
+    display: inline-block;
+    -webkit-transition: all ease-in-out .15s;
+    transition: all ease-in-out .15s;
+}
+
+.video .sun:hover h1 span {
+    -webkit-transform: rotateZ(-90deg) translate3d(0, 0, 0);
+    -moz-transform: rotateZ(-90deg) translate3d(0, 0, 0);
+    -ms-transform: rotateZ(-90deg) translate3d(0, 0, 0);
+    -o-transform: rotateZ(-90deg) translate3d(0, 0, 0);
+    transform: rotateZ(-90deg) translate3d(0, 0, 0);
 }
 
 .video .title {
@@ -369,6 +388,7 @@ section.content article p {
 }
 
 .wall {
+    margin-top: 40px;
     position: relative;
     background-color: #1C2026;
     overflow: hidden;
@@ -728,17 +748,6 @@ a.list-group-item .list-group-item-heading {
 }
 
 @media only screen and (max-width: 991px) {
-    .video .sun {
-      width: 150px;
-      height: 150px;
-      border-radius: 75px;
-    }
-
-    .video .sun h1 {
-        font-size: 1.5em;
-        margin-top: 58px;
-    }
-
     section.greenlight p {
         margin-top: 14px;
     }
