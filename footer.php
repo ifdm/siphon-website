@@ -13,7 +13,7 @@
                                 <li>Ezra Stallings</li>
                                 <li>Kyle Leisker-Krohn</li>
                                 <li>Nolan Blankenship</li>
-                                <li>Bj<a href="http://www.autohotkey.com/board/topic/84831-lua-sucks/">&#248;</a>rn Swenson</li>
+                                <li>Bj<a href="http://trey.io/idk.png">&#248;</a>rn Swenson</li>
                                 <li>Graciela Ruiz</li>
                                 <li>Evan Slagle</li>
                                 <li>Sophia Baldonado</li>
@@ -31,11 +31,21 @@
         </footer>
 
         <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/vendor/jquery/jquery.min.js"></script>
-        <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
         <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-37381091-2']);
         _gaq.push(['_trackPageview']);
+        
+        var downloads = document.getElementsByClassName('sun')[0];
+        downloads.onclick = function(e) {
+            var href;
+
+            if(e.target.tagName.toLowerCase() !== 'a') href = e.target.parentNode.href;
+            else href = e.target.href;
+
+            setTimeout(function(){ _gaq.push(['_trackEvent','Download','<?php echo get_operating_system(); ?>',href]); }, 150);
+        };
+
         (function() {
             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';

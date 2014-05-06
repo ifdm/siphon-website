@@ -4,6 +4,7 @@ function get_nav() {
 	return include('nav.php');
 }
 
+$operating_systems = array('Mac', 'Linux', 'Windows');
 function get_operating_system() { 
     $user_agent = $_SERVER['HTTP_USER_AGENT'];
     $os_platform = "Unsupported";

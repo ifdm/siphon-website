@@ -15,9 +15,6 @@
                 <h1 class="tagline">Harness Nature. Save The World.</h1>
                 <h4>A 2D Platformer that tests your puzzle-solving mettle.</h4>
             </div>
-            <a class="sun" href="downloads/siphon-<?php echo strtolower(get_operating_system()); ?>.zip">
-              <h1><span class="glyphicon glyphicon-download"></span> Download for <?php echo get_operating_system(); ?></h1>
-            </a>
             <video class="background" autoplay loop="true">
                 <source src="<?php bloginfo('template_url'); ?>/video/waterfall.webm" type="video/webm">
                 <source src="<?php bloginfo('template_url'); ?>/video/waterfall.mp4" type="video/mp4">
@@ -48,6 +45,17 @@
             </div>
         </section>
         <section class="content">
+            <div class="col-xs-12 downloads">
+                <h2>Now Available for Mac, Windows, and Linux.</h2>
+                <a class="sun" href="downloads/siphon-<?php echo strtolower(get_operating_system()); ?>.zip">
+                    <h1><span class="glyphicon glyphicon-download"></span> Download for <?php echo get_operating_system(); ?></h1>
+                </a>
+                <div class="col-xs-12 alternatives">
+                    <?php $filtered = array_filter($operating_systems, function($element) { return $element !== get_operating_system(); }); foreach($filtered as $os): ?>
+                    <a href="downloads/siphon-<?php echo strtolower($os); ?>.zip"><?php echo $os; ?></a>
+                    <?php endforeach;?>
+                </div>
+            </div>
             <div class="wall">
                 <img class="rock-1" src="<?php bloginfo('template_url'); ?>/img/wall.png" alt="">
                 <img class="rock-2" src="<?php bloginfo('template_url'); ?>/img/wall.png" alt="">
